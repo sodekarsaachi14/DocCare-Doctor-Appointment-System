@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | DocCare+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">DocCare+</h2>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+
+    <section class="login-container">
+
+        <div class="login-box">
+            <h1>Create Account</h1>
+            <p>Register with DocCare+</p>
+
+            <form id="registerForm">
+
+                <label>Register As</label>
+                <select id="registerRole" required>
+                    <option value="">Select Role</option>
+                    <option value="patient">Patient</option>
+                    <option value="doctor">Doctor</option>
+                </select>
+
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label>Email Address</label>
+                <input type="email" id="registerEmail" placeholder="Enter email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+                <div id="doctorFields" style="display:none;">
+
+                    <label>Specialization</label>
+                    <select id="specialization">
+                        <option value="">Select Specialization</option>
+                        <option>Cardiologist</option>
+                        <option>Dermatologist</option>
+                        <option>Dentist</option>
+                        <option>General Physician</option>
+                        <option>Neurologist</option>
+                        <option>Orthopedic</option>
+                        <option>Pediatrician</option>
+                    </select>
+
+                    <label>Consultation Fee (₹)</label>
+                    <input type="number" id="fee" placeholder="Enter consultation fee">
+
+                    <label>Clinic Location</label>
+                    <input type="text" id="location" placeholder="Enter clinic location">
+
+                    <label>Available Timings</label>
+                    <input type="text" id="timings" placeholder="e.g. 10 AM - 5 PM">
+
+                </div>
+
+                <label>Password</label>
+                <input type="password" id="registerPassword" placeholder="Create password" required>
+
+                <button type="submit">Create Account</button>
+
+            </form>
+
+            <p class="signup">
+                Already have an account?
+                <a href="login.html">Login Here</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

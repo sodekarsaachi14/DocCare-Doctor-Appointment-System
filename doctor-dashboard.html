@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard | DocCare+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">DocCare+</h2>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="doctor-section">
+
+        <h1>Doctor Dashboard</h1>
+        <p>Manage your patient appointment requests.</p>
+
+        <div class="dashboard-summary">
+            <div class="summary-card">
+                <h3>Total Appointments</h3>
+                <h2 id="totalAppointments">0</h2>
+            </div>
+
+            <div class="summary-card">
+                <h3>Pending Requests</h3>
+                <h2 id="pendingAppointments">0</h2>
+            </div>
+
+            <div class="summary-card">
+                <h3>Confirmed</h3>
+                <h2 id="confirmedAppointments">0</h2>
+            </div>
+        </div>
+
+        <h2 class="dashboard-heading">Appointment Requests</h2>
+
+        <div id="doctorAppointments"></div>
+
+    </section>
+    <h2 class="dashboard-heading">Patient Feedback</h2>
+    <div id="doctorFeedback"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

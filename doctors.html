@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctors | DocCare+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">DocCare+</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Find Doctors</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="doctor-section">
+
+        <h1>Find Your Doctor</h1>
+        <p>Choose the right doctor for your healthcare needs.</p>
+
+        <div class="search-box">
+
+            <input type="text" id="searchLocation"
+                   placeholder="Enter location">
+
+            <select id="searchSpecialization">
+                <option value="">All Specializations</option>
+                <option value="Cardiologist">Cardiologist</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Dentist">Dentist</option>
+                <option value="General Physician">General Physician</option>
+                <option value="Neurologist">Neurologist</option>
+                <option value="Orthopedic">Orthopedic</option>
+                <option value="Pediatrician">Pediatrician</option>
+            </select>
+
+            <button onclick="searchDoctors()">Search</button>
+
+        </div>
+
+        <div id="doctorList" class="doctor-container">
+
+            <div class="doctor-card"
+                 data-specialization="Cardiologist"
+                 data-location="Mumbai">
+
+                <h2>Dr. Rahul Sharma</h2>
+                <p>Cardiologist</p>
+                <p>Location: Mumbai</p>
+                <p>Consultation Fee: ₹800</p>
+                <p>Timing: 10 AM - 2 PM</p>
+                <button onclick="bookAppointment('Dr. Rahul Sharma')">
+                    Book Appointment
+                </button>
+
+            </div>
+
+            <div class="doctor-card"
+                 data-specialization="Dermatologist"
+                 data-location="Pune">
+
+                <h2>Dr. Priya Patel</h2>
+                <p>Dermatologist</p>
+                <p>Location: Pune</p>
+                <p>Consultation Fee: ₹600</p>
+                <p>Timing: 11 AM - 5 PM</p>
+                <button onclick="bookAppointment('Dr. Priya Patel')">
+                    Book Appointment
+                </button>
+
+            </div>
+
+            <div class="doctor-card"
+                 data-specialization="Dentist"
+                 data-location="Karjat">
+
+                <h2>Dr. Amit Deshmukh</h2>
+                <p>Dentist</p>
+                <p>Location: Karjat</p>
+                <p>Consultation Fee: ₹500</p>
+                <p>Timing: 9 AM - 1 PM</p>
+                <button onclick="bookAppointment('Dr. Amit Deshmukh')">
+                    Book Appointment
+                </button>
+
+            </div>
+
+            <div class="doctor-card"
+                 data-specialization="General Physician"
+                 data-location="Mumbai">
+
+                <h2>Dr. Neha Shah</h2>
+                <p>General Physician</p>
+                <p>Location: Mumbai</p>
+                <p>Consultation Fee: ₹400</p>
+                <p>Timing: 10 AM - 4 PM</p>
+                <button onclick="bookAppointment('Dr. Neha Shah')">
+                    Book Appointment
+                </button>
+
+            </div>
+
+        </div>
+
+        <p id="noResults" style="display:none;">
+            No doctors found matching your search.
+        </p>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

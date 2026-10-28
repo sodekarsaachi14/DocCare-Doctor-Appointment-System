@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | DocCare+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">DocCare+</h2>
+            <a href="doctors.html">Back to Doctors</a>
+        </nav>
+    </header>
+
+    <section class="login-container">
+
+        <div class="login-box">
+            <h1>Book Appointment</h1>
+            <p>Schedule your consultation</p>
+
+            <form id="bookingForm">
+
+                <label>Doctor Name</label>
+                <input type="text" id="doctorName" readonly required>
+
+                <label>Patient Name</label>
+                <input type="text" id="patientName"
+                       placeholder="Enter your full name" required>
+
+                <label>Email Address</label>
+                <input type="email" id="patientEmail"
+                       placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="patientPhone"
+                       placeholder="Enter phone number"
+                       pattern="[0-9]{10}" required>
+
+                <label>Problem / Symptoms</label>
+                <textarea id="problem"
+                          placeholder="Describe your health problem"
+                          rows="4" required></textarea>
+
+                <label>Appointment Date</label>
+                <input type="date" id="appointmentDate" required>
+
+                <label>Preferred Time</label>
+                <select id="appointmentTime" required>
+                    <option value="">Select Time</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>01:00 PM</option>
+                    <option>02:00 PM</option>
+                    <option>03:00 PM</option>
+                    <option>04:00 PM</option>
+                    <option>05:00 PM</option>
+                </select>
+
+                <button type="submit">Submit Appointment Request</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

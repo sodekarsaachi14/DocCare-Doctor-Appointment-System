@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | DocCare+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">DocCare+</h2>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<section class="login-container">
+    <div class="login-box">
+        <h1>Patient Feedback</h1>
+        <p>Share your experience with us.</p>
+
+        <form id="feedbackForm">
+
+            <label>Patient Name</label>
+            <input type="text" id="feedbackName"
+                   placeholder="Enter your name" required>
+
+            <label>Select Doctor</label>
+            <input type="text" id="feedbackDoctor"
+                   placeholder="Doctor's name" required>
+
+            <label>Rating</label>
+            <select id="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Average</option>
+                <option value="1">1 - Poor</option>
+            </select>
+
+            <label>Your Feedback</label>
+            <textarea id="feedbackMessage"
+                      rows="4" required
+                      placeholder="Write your experience"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <p id="feedbackMessageStatus"></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

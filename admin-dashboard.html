@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | DocCare+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">DocCare+ Admin</h2>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+
+<section class="doctor-section">
+    <h1>Admin Dashboard</h1>
+    <p>Monitor and manage appointment requests.</p>
+
+    <div class="dashboard-summary">
+        <div class="summary-card">
+            <h3>Total Bookings</h3>
+            <h2 id="adminTotal">0</h2>
+        </div>
+        <div class="summary-card">
+            <h3>Pending</h3>
+            <h2 id="adminPending">0</h2>
+        </div>
+        <div class="summary-card">
+            <h3>Confirmed</h3>
+            <h2 id="adminConfirmed">0</h2>
+        </div>
+    </div>
+
+    <h2 class="dashboard-heading">All Appointments</h2>
+    <div id="adminAppointments"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

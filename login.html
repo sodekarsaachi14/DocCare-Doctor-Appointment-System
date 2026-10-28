@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | DocCare+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">DocCare+</h2>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+
+    <section class="login-container">
+
+        <div class="login-box">
+            <h1>Welcome Back!</h1>
+            <p>Login to your DocCare account</p>
+
+            <form id="loginForm">
+
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+                <label>Login As</label>
+                <select id="role" required>
+                    <option value="">Select Role</option>
+                    <option value="patient">Patient</option>
+                    <option value="doctor">Doctor</option>
+                </select>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+            <p class="signup">
+                Don't have an account?
+                <a href="register.html">Register Here</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
